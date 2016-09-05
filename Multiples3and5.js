@@ -4,27 +4,47 @@
 
 var arr = [];
 function Array(){
- for(var i = 0; i <= 100; i++){
+ for(var i = 0; i < 1000; i++){
   arr.push(i);
  }
 return arr;
 }
 
-console.log(Array());
-var arrMultiplos = [];
+Array();
+
+var arrMultiples = [];
 
 arr.map(function(num){
   if(num % 3 === 0){
-   arrMultiplos.push(num);
+   arrMultiples.push(num);
   } else if (num % 5 === 0){
-   arrMultiplos.push(num);
+   arrMultiples.push(num);
   }
- return arrMultiplos; 
+ return arrMultiples; 
  }
 );
 
+function Counter(){
+	this.sum = 0;
+}
 
-console.log('Los multiplos de 3 & 5 en un arry de 100 son ' + arrMultiplos);
+Counter.prototype.add = function(array) {
+	array.forEach(function(item){
+		this.sum += item;
+	}, this);
+};
+
+var sumOfMultiples = new Counter();
+
+sumOfMultiples.add(arrMultiples);
+//console.log(sumOfMultiples.sum);
+
+
+//console.log('Los multiplos de 3 & 5 en un arry de 100 son ' + arrMultiples);
+
+console.log('The sum of multiples is :' + sumOfMultiples.sum);
+
+
 
 
 
