@@ -35,6 +35,7 @@ Counter.prototype.add = function(array) {
 };
 
 var sumOfMultiples = new Counter();
+<<<<<<< HEAD
 
 sumOfMultiples.add(arrMultiples);
 //console.log(sumOfMultiples.sum);
@@ -45,6 +46,12 @@ sumOfMultiples.add(arrMultiples);
 console.log('The sum of multiples is :' + sumOfMultiples.sum);
 
 
+=======
+sumOfMultiples.add(arrMultiples);
+
+
+console.log('The sum of multiples is :' + sumOfMultiples.sum);
+>>>>>>> db64242719fd1a714478c6a2487c1764ba770eb5
 
 
 
