@@ -1,15 +1,14 @@
 // Multiples of 3 and 5
 
 var arr = [];
-function Array(){
+function array(){
  for(var i = 0; i < 1000; i++){
   arr.push(i);
  }
 return arr;
 }
 
-Array();
-
+array();
 var arrMultiples = [];
 
 arr.map(function(num){
