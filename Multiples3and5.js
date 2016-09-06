@@ -35,10 +35,6 @@ Counter.prototype.add = function(array) {
 };
 
 var sumOfMultiples = new Counter();
-<<<<<<< HEAD
-
-sumOfMultiples.add(arrMultiples);
-//console.log(sumOfMultiples.sum);
 
 
 //console.log('Los multiplos de 3 & 5 en un arry de 100 son ' + arrMultiples);
@@ -46,12 +42,10 @@ sumOfMultiples.add(arrMultiples);
 console.log('The sum of multiples is :' + sumOfMultiples.sum);
 
 
-=======
 sumOfMultiples.add(arrMultiples);
 
 
 console.log('The sum of multiples is :' + sumOfMultiples.sum);
->>>>>>> db64242719fd1a714478c6a2487c1764ba770eb5
 
 
 
