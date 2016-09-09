@@ -1,4 +1,4 @@
-
+// Multiples of 3 and 5 and their sum
 
 var arr = [];
 function array(){
